@@ -14,14 +14,16 @@ html, body{
 .inputWithEmoji{
     border-radius: 4px;
     outline-color: #BBBBBB;
-    width: 290px;
+    min-width: 261px;
     height: unset;
     border: 1px solid #C5D0DB;
     padding: 9px 28px 9px 9px;
     resize: none;
     text-align: left;
     line-height: 18px;
-    font-style: normal;
+    margin-right: -30px;
+    max-height: 18px;
+    font-weight: lighter;
 }
 
 
@@ -33,5 +35,6 @@ html, body{
     cursor: pointer;
     margin-right: -290px;
     margin-top: -29px;
+    z-index: 3;
 }
 
