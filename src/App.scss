@@ -1,0 +1,37 @@
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.inputWithEmoji{
+    border-radius: 4px;
+    outline-color: #BBBBBB;
+    width: 290px;
+    height: unset;
+    border: 1px solid #C5D0DB;
+    padding: 9px 28px 9px 9px;
+    resize: none;
+    text-align: left;
+    line-height: 18px;
+    font-style: normal;
+}
+
+
+.inputWithEmoji:focus {
+    outline: none;
+}
+
+.emojiBtn{
+    cursor: pointer;
+    margin-right: -290px;
+    margin-top: -29px;
+}
+

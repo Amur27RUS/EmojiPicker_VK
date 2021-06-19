@@ -1,0 +1,122 @@
+.emojiPick{
+    position: absolute;
+    margin-top: -326px;
+
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 281px;
+    margin-left: 30px;
+    margin-bottom: 12px;
+    background: #FFFFFF;
+    border: 1px solid #C5D0DB;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 12px 4px 0 4px;
+}
+
+.emojiPick-disabled{
+    display: none;
+}
+
+.emojiHeader{
+    position: sticky;
+    top: 0;
+
+    margin-left: 4px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+    color: #939393;
+    width: 115%;
+    background-color: rgba(255, 255, 255, 0.96);
+}
+
+.emojiSelector{
+    display: flex;
+    flex-direction: row;
+    max-width: 290px;
+    min-height: 213px;
+    margin-top: -6px;
+    padding-left: 4px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    align-content: flex-start;
+}
+
+
+.emojiMenu-all{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: #EBEEF2;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    right: 4px;
+    width: 298px;
+    margin-left: -4px;
+}
+
+.emojiMenu-recent{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: left;
+    background-color: #EBEEF2;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 298px;
+    margin-left: -4px;
+    margin-top: 245px;
+}
+
+.emojiMenuBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.selectedMenuEmoji{
+    background-color: white;
+    border-bottom-left-radius: 3px;
+}
+
+.selectedMenuEmoji-recent{
+    background-color: white;
+}
+
+.emoji{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.emoji:hover{
+    background-color: #F0F2F5;
+    border-radius: 4px;
+}
+
+.emojiSelector::-webkit-scrollbar{
+    width: 5px;
+
+}
+
+.emojiSelector::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.emojiSelector::-webkit-scrollbar-thumb {
+    background-color: #DAE2EA;
+    border-radius: 20px;
+}
