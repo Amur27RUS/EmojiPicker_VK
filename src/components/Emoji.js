@@ -11,11 +11,11 @@ const Emoji = ({recentEmoji, setRecentEmoji, symbol, type, setInputValue, inputV
                 let isNotInRecent = true;
 
                 //Проверяем, чтобы нашего emoji не было в недавних:
+                // eslint-disable-next-line array-callback-return
                 recentEmoji.map((emoji, index) =>{
                     if(emoji === symbol){
                         isNotInRecent = false;
-                        console.log(recentEmoji);
-                        console.log(recentEmoji.splice(index, 1));
+                        recentEmoji.splice(index, 1);
                         //Если эмодзи уже есть в использованных, то добавляем его просто в начало недавних
                         setRecentEmoji([symbol, ...recentEmoji.slice(0, index), ...recentEmoji.slice(index, 25)]);
                     }
