@@ -36,11 +36,10 @@ const App = () => {
 
     return (
         <div className="app">
-            <a href={'https://vk.com/amur27rus'} target="_blank" rel="noreferrer"  style={{position: "absolute", top: 0, left: 10}}>Клюев Андрей</a>
+            <a href={'https://vk.com/amur27rus'} target="_blank" rel="noreferrer"  style={{position: "absolute", top: 20, left: 10}}>Клюев Андрей</a>
 
             <EmojiPicker isEmojiMenuOpened={isEmojiMenuOpened} setInputValue={setInputValue} inputValue={inputValue} resizeTextArea={resizeTextArea}/>
-            <div className={`${isEmojiMenuOpened ? 'arrow' : 'emojiPick-disabled'}`}/>
-            <div className={`${isEmojiMenuOpened ? 'arrow2' : 'emojiPick-disabled'}`}/>
+
             <textarea id={'textArea'} className={'inputWithEmoji'} onKeyUp={resizeTextArea}
                       onKeyDownCapture={resizeTextArea}
                       onKeyPress={resizeTextArea} onKeyDown={handleUpKeyPress}
@@ -52,6 +51,7 @@ const App = () => {
                 <path d="M13 9.5C13.6904 9.5 14.25 8.94036 14.25 8.25C14.25 7.55964 13.6904 7 13 7C12.3096 7 11.75 7.55964 11.75 8.25C11.75 8.94036 12.3096 9.5 13 9.5Z" fill="#C5D0DB"/>
                 <path fillRule="evenodd" clipRule="evenodd" d="M10 0.100006C4.53239 0.100006 0.100006 4.53239 0.100006 10C0.100006 15.4676 4.53239 19.9 10 19.9C15.4676 19.9 19.9 15.4676 19.9 10C19.9 4.53239 15.4676 0.100006 10 0.100006ZM1.90001 10C1.90001 5.5265 5.5265 1.90001 10 1.90001C14.4735 1.90001 18.1 5.5265 18.1 10C18.1 14.4735 14.4735 18.1 10 18.1C5.5265 18.1 1.90001 14.4735 1.90001 10Z" fill="#C5D0DB"/>
             </svg>
+
 
         </div>
     );

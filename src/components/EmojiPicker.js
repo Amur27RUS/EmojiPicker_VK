@@ -57,6 +57,8 @@ const EmojiPicker = (props) => {
                         <path fillRule="evenodd" clipRule="evenodd" d="M10 0.100006C4.53239 0.100006 0.100006 4.53239 0.100006 10C0.100006 15.4676 4.53239 19.9 10 19.9C15.4676 19.9 19.9 15.4676 19.9 10C19.9 4.53239 15.4676 0.100006 10 0.100006ZM1.90001 10C1.90001 5.5265 5.5265 1.90001 10 1.90001C14.4735 1.90001 18.1 5.5265 18.1 10C18.1 14.4735 14.4735 18.1 10 18.1C5.5265 18.1 1.90001 14.4735 1.90001 10Z" fill="#99A2AD"/>
                     </svg>
                     </div>
+                <div className={`${props.isEmojiMenuOpened ? 'arrow' : 'emojiPick-disabled'}`}/>
+                <div className={`${props.isEmojiMenuOpened ? 'arrow2' : 'emojiPick-disabled'}`}/>
 
             </div>
         </div>

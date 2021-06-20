@@ -1,13 +1,11 @@
 .emojiPick{
     position: absolute;
-    margin-top: -326px;
-
+    bottom: 140px;
     display: flex;
     flex-direction: column;
     width: 290px;
     height: 281px;
-    margin-left: 30px;
-    margin-bottom: 12px;
+    margin: -326px auto 12px;
     background: #FFFFFF;
     border: 1px solid #C5D0DB;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
@@ -123,22 +121,24 @@
 
 .arrow{
     position: absolute;
-    margin-bottom: 56px;
-    margin-left: 290px;
-    border-right: 16px solid #EBEEF2;
-    border-top: 16px solid #EBEEF2;
-    transform: rotate(225deg);
-    z-index: 1;
+    width: 16px;
+    height: 16px;
+    margin-left: 273px;
+    margin-top: 24px;
+    background-color: #EBEEF2;
+    transform: rotate(223deg);
+    z-index: -1;
+    outline: #C5D0DB solid 1px;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 10%);
-    outline: #C5D0DB auto 1px;
 }
 
 .arrow2{
     position: absolute;
-    margin-bottom: 57px;
-    margin-left: 290px;
-    border-right: 16px solid #EBEEF2;
-    border-top: 16px solid #EBEEF2;
-    transform: rotate(225deg);
+    width: 16px;
+    height: 16px;
+    margin-left: 273px;
+    margin-top: 24px;
+    background-color: #EBEEF2;
+    transform: rotate(223deg);
     z-index: 2;
 }
