@@ -21,8 +21,6 @@ const App = () => {
         }else{
             document.getElementById('textArea').style.overflowY = 'scroll';
         }
-
-        console.log(document.getElementById('textArea').scrollHeight);
     }
 
     function handleInputValue(e){

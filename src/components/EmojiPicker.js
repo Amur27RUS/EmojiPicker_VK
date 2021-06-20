@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import {AllEmoji} from './AllEmoji';
 import './emojiPicker.scss';
 import Emoji from './Emoji';
+import emojiStorage from './sections.json';
 
 
 const EmojiPicker = (props) => {
@@ -13,15 +13,21 @@ const EmojiPicker = (props) => {
     return(
         <div className={`${props.isEmojiMenuOpened ? 'emojiPick' : 'emojiPick-disabled'}`}>
 
+            {/*Если меню открыто, то выводим все эмодзи из файла:*/}
             {pickedEmojiMenu === 'allEmoji' &&
                 <div className={'emojiSelector'}>
-                    <p className={'emojiHeader'}>Эмоции</p>
-                    {AllEmoji.map((emoji) => {
-                        return (
-                            <Emoji symbol={emoji} type={'all'} recentEmoji={recentEmoji} setRecentEmoji={setRecentEmoji} key={emoji}
-                                   setInputValue={props.setInputValue} inputValue={props.inputValue} resizeTextArea={props.resizeTextArea}/>
-                        );
+                    {emojiStorage.map(section =>{
+                        return(<React.Fragment key={section.title}>
+                            <p className={'emojiHeader'}>{section.title}</p>
+                            {section.items.map((emoji) => {
+                                return (
+                                    <Emoji symbol={emoji} type={'all'} recentEmoji={recentEmoji} setRecentEmoji={setRecentEmoji} key={emoji}
+                                        setInputValue={props.setInputValue} inputValue={props.inputValue} resizeTextArea={props.resizeTextArea}/>
+                                );
+                            })}
+                        </React.Fragment>)
                     })}
+
                 </div>
             }
             {pickedEmojiMenu === 'recentEmoji' &&
