@@ -30,7 +30,6 @@ const Emoji = ({recentEmoji, setRecentEmoji, symbol, type, setInputValue, inputV
                     }
                 }
 
-
             }
 
             //Добавляем эмодзи в инпут

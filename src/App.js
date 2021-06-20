@@ -37,6 +37,8 @@ const App = () => {
             <p style={{position: "absolute", top: 0, left: 10}}>Клюев Андрей</p>
 
             <EmojiPicker isEmojiMenuOpened={isEmojiMenuOpened} setInputValue={setInputValue} inputValue={inputValue} resizeTextArea={resizeTextArea}/>
+            <div className={`${isEmojiMenuOpened ? 'arrow' : 'emojiPick-disabled'}`}/>
+            <div className={`${isEmojiMenuOpened ? 'arrow2' : 'emojiPick-disabled'}`}/>
             <textarea id={'textArea'} className={'inputWithEmoji'} onKeyUp={resizeTextArea}
                       onKeyDownCapture={resizeTextArea}
                       onKeyPress={resizeTextArea} onKeyDown={handleUpKeyPress}
