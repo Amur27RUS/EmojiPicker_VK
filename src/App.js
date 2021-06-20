@@ -34,7 +34,7 @@ const App = () => {
 
     return (
         <div className="app">
-            <p style={{position: "absolute", top: 0, left: 10}}>Клюев Андрей</p>
+            <a href={'https://vk.com/amur27rus'} target="_blank" rel="noreferrer"  style={{position: "absolute", top: 0, left: 10}}>Клюев Андрей</a>
 
             <EmojiPicker isEmojiMenuOpened={isEmojiMenuOpened} setInputValue={setInputValue} inputValue={inputValue} resizeTextArea={resizeTextArea}/>
             <div className={`${isEmojiMenuOpened ? 'arrow' : 'emojiPick-disabled'}`}/>
