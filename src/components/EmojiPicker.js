@@ -19,7 +19,7 @@ const EmojiPicker = (props) => {
                     {AllEmoji.map((emoji) => {
                         return (
                             <Emoji symbol={emoji} type={'all'} recentEmoji={recentEmoji} setRecentEmoji={setRecentEmoji}
-                                   setInputValue={props.setInputValue} inputValue={props.inputValue}/>
+                                   setInputValue={props.setInputValue} inputValue={props.inputValue} resizeTextArea={props.resizeTextArea}/>
                         );
                     })}
                 </div>
@@ -30,7 +30,7 @@ const EmojiPicker = (props) => {
                 {recentEmoji.map((emoji) => {
                     return (
                         <Emoji symbol={emoji} type={'recent'}
-                               setInputValue={props.setInputValue} inputValue={props.inputValue}/>
+                               setInputValue={props.setInputValue} inputValue={props.inputValue} resizeTextArea={props.resizeTextArea}/>
                     );
                 })}
             </div>

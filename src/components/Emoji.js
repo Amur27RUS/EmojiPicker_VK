@@ -1,11 +1,12 @@
 import React from 'react';
 import './emojiPicker.scss';
 
-const Emoji = ({recentEmoji, setRecentEmoji, symbol, type, setInputValue, inputValue}) => (
+const Emoji = ({recentEmoji, setRecentEmoji, symbol, type, setInputValue, inputValue, resizeTextArea}) => (
     <span
         className="emoji"
         role="img"
         onClick={()=> {
+            resizeTextArea();
             if(type === 'all'){
                 let isNotInRecent = true;
 

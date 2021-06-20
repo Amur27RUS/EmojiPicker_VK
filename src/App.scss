@@ -15,20 +15,33 @@ html, body{
     border-radius: 4px;
     outline-color: #BBBBBB;
     min-width: 261px;
-    height: unset;
+    height: 18px;
     border: 1px solid #C5D0DB;
     padding: 9px 28px 9px 9px;
     resize: none;
     text-align: left;
     line-height: 18px;
     margin-right: -30px;
-    max-height: 18px;
     font-weight: lighter;
 }
 
 
 .inputWithEmoji:focus {
     outline: none;
+}
+
+.inputWithEmoji::-webkit-scrollbar{
+    width: 5px;
+
+}
+
+.inputWithEmoji::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.inputWithEmoji::-webkit-scrollbar-thumb {
+    background-color: #DAE2EA;
+    border-radius: 20px;
 }
 
 .emojiBtn{
