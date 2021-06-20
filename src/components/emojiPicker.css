@@ -1,8 +1,6 @@
 .emojiPick{
     position: absolute;
     margin-top: -326px;
-    left: 0;
-    right: 0;
 
     display: flex;
     flex-direction: column;
@@ -66,8 +64,6 @@
 .emojiMenu-recent{
     display: flex;
     position: absolute;
-    left: 0;
-    right: 0;
     flex-direction: row;
     justify-content: left;
     background-color: #EBEEF2;
@@ -127,8 +123,6 @@
 
 .arrow{
     position: absolute;
-    left: 0;
-    right: 0;
     margin-bottom: 56px;
     margin-left: 290px;
     border-right: 16px solid #EBEEF2;
@@ -141,8 +135,6 @@
 
 .arrow2{
     position: absolute;
-    left: 0;
-    right: 0;
     margin-bottom: 57px;
     margin-left: 290px;
     border-right: 16px solid #EBEEF2;

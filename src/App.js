@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./App.scss"
+import "./App.css"
 import EmojiPicker from "./components/EmojiPicker";
 
 const App = () => {

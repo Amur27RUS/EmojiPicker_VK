@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './emojiPicker.scss';
+import './emojiPicker.css';
 import Emoji from './Emoji';
 import emojiStorage from './sections.json';
 

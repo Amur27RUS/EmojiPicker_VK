@@ -1,5 +1,5 @@
 import React from 'react';
-import './emojiPicker.scss';
+import './emojiPicker.css';
 
 const Emoji = ({recentEmoji, setRecentEmoji, symbol, type, setInputValue, inputValue, resizeTextArea}) => (
     <span
