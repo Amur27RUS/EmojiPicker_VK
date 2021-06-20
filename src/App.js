@@ -7,18 +7,22 @@ const App = () => {
     const [isEmojiMenuOpened, setIsEmojiMenuOpened] = useState(false);
     const [inputValue, setInputValue] = useState('');
 
+
     //Меняем размер textArea в зависимости от введённого текста
     function resizeTextArea(){
-        if(document.getElementById('textArea').scrollHeight < 144){
+
+        if(document.getElementById('textArea').scrollHeight < 140){
             document.getElementById('textArea').style.height = 'auto';
             document.getElementById('textArea').style.height = `${document.getElementById('textArea').scrollHeight - 36}px`;
-            if(document.getElementById('textArea').scrollHeight > 53){
+            if(document.getElementById('textArea').scrollHeight > 50){
                 document.getElementById('textArea').style.height = `${document.getElementById('textArea').scrollHeight - 18}px`;
             }
             document.getElementById('textArea').style.overflowY = 'hidden';
         }else{
             document.getElementById('textArea').style.overflowY = 'scroll';
         }
+
+        console.log(document.getElementById('textArea').scrollHeight);
     }
 
     function handleInputValue(e){
